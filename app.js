@@ -15,7 +15,7 @@ app.post('/login', (req, res) => {
     
     contentType = contentType.split(';')[0]
 
-    if(contentType !== 'application/json') {
+    if(contentType && contentType !== 'application/json') {
         return res.status(400).json({
             message: "corpo da requisição deve ser tipo json"
         })

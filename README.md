@@ -5,7 +5,7 @@ Para rodar a API execute `docker-compose up`. O servidor vai rodar no em `http:/
 
 ### Login
 
-Fazer uma request para o endpoint `/login` com método post, passando "login" e "password" no body, que é tipo json. As credenciais são `login: lulu`, `senha: 1234`. 
+Fazer uma request para o endpoint `/login` com método post, passando "login" e "password" no body, que é tipo json (se precisar também passar um header 'content-type' com valor 'application/json;'). As credenciais são `login: lulu`, `senha: 1234`. 
 
 ### GET cidades
 
